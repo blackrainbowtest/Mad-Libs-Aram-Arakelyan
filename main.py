@@ -418,7 +418,7 @@ while True:
             history += " " + childhood_activity[character["family"]][user_input][1]
             character["childhood_activity"] = user_input
         elif "" in character["storylines"]:
-            index = str(character["storylines"].index(""))
+            index = character["storylines"].index("")
             randTrueAnswer = random.randint(1, 4)
             if abs(randTrueAnswer - int(user_input)) > 1:
                 value_to_assign = 1
